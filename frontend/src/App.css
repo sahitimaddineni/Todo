@@ -1,0 +1,137 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Todo List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fafafa;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li div {
+  flex-grow: 1;
+  text-align: left;
+}
+
+li p {
+  margin: 5px 0;
+  color: #777;
+}
+
+li button {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+/* Completed Todos */
+li.completed {
+  background-color: #e8f5e9;
+}
+
+li.completed strong {
+  text-decoration: line-through;
+  color: #666;
+}
+
+li.completed p {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Todo Form Styles */
+form.edit-form {
+  margin-bottom: 20px;
+}
+
+form.edit-form input {
+  margin-bottom: 10px;
+}
+
+button[type="button"].cancel {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+button[type="button"].cancel:hover {
+  background-color: #e53935;
+}
